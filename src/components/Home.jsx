@@ -16,7 +16,7 @@ const Home = () => {
         {/* Container */}
         <div className="max-w-[800px] mx-[100px]  px-8 flex flex-col justify-center h-full relative">
           <Animated animationIn="flipInX" animationInDuration={2500}>
-            <p className="text-pink-600 text-xl">Hi, my name is</p>
+            <p className="text-pink-600 text-xl">Hi, my name is victor</p>
           </Animated>
 
           <Animated
