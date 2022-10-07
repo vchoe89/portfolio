@@ -10,6 +10,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Logo2 from "../assets/vclogo.png";
 import { Link } from "react-scroll";
+import Logo3 from "../assets/trylogo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -45,10 +46,11 @@ const Navbar = () => {
     >
       <div>
         <img
+          className="pr-[8rem]  pt-2 left"
           id="nav-img"
           src={Logo2}
           alt="Logo image"
-          style={{ width: "80px" }}
+          style={{ width: "200px" }}
         />
       </div>
 
@@ -92,7 +94,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
             >
-              Work
+              Projects
             </Link>
           </li>
           <li>

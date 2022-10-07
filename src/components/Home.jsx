@@ -8,10 +8,10 @@ import styled, { keyframes } from "styled-components";
 const Home = () => {
   return (
     <div>
-      <div name="home" className="w-full h-screen  bg-[#0a192f]">
+      <div name="home" className="w-full h-screen bg-[#0a192f]">
         <div>
           <img
-            className="absolute  md:w-[600px] md:mx-[900px] md:my-[275px]"
+            className="absolute  md:w-[690px] md:mx-[1000px] md:my-[220px]"
             src={Cartoon}
             alt=""
           />

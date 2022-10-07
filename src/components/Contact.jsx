@@ -1,9 +1,16 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <div
       name="contact"
+      data-aos="fade-up"
       className="w-full h-screen bg-[#0a192f] flex justify-center items-center p-4"
     >
       <form
