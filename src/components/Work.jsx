@@ -1,4 +1,3 @@
-import { data } from "autoprefixer";
 import React from "react";
 import workImg from "../assets/workImg.png";
 import workImg2 from "../assets/workImg2.png";
@@ -10,7 +9,7 @@ const Work = () => {
     <div name="work" className=" w-full md:h-screen bg-white workDiv">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8 ">
-          <p className="text-6xl font-bold inline border-b-4 text-gray-700 border-pink-600">
+          <p className="text-7xl font-bold inline border-b-4 text-gray-700 border-pink-600">
             Projects
           </p>
           <p className="py-6">Check out some of my recent projects.</p>
@@ -27,15 +26,12 @@ const Work = () => {
                   Amazon Clone
                 </span>
                 <div className="pt-8 text-center">
-                  <a href="/">
+                  <a href="https://clone-f0714.firebaseapp.com/">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
                   </a>
-                  <a
-                    href="https://github.com/vchoe89/amazon-clone"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/vchoe89/amazon-clone">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
@@ -55,15 +51,12 @@ const Work = () => {
                   Netflix Clone
                 </span>
                 <div className="pt-8 text-center">
-                  <a href="/">
+                  <a href="https://netflix-clone-c353e.web.app/">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
                   </a>
-                  <a
-                    href="https://github.com/vchoe89/netflix-clone"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/vchoe89/netflix-clone">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
@@ -80,18 +73,15 @@ const Work = () => {
             <div className="opacity-0 group-hover:opacity-100 hover:backdrop-blur-sm h-full w-full">
               <div className="justify-center items-center text-center pt-[4rem]">
                 <span className="text-2xl p-2 font-bold text-white tracking-wider">
-                  Weather Application
+                  Global Weather
                 </span>
                 <div className="pt-8 text-center">
-                  <a href="/">
+                  <a href="https://global-weather-a51c5.web.app/">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
                   </a>
-                  <a
-                    href="https://github.com/vchoe89/data-finance"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/vchoe89/global-weather">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
@@ -116,10 +106,7 @@ const Work = () => {
                       Demo
                     </button>
                   </a>
-                  <a
-                    href="https://github.com/vchoe89/data-finance"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/vchoe89/data-finance">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
@@ -127,6 +114,7 @@ const Work = () => {
                 </div>
               </div>
             </div>
+            {/* <div>extra div</div> */}
           </div>
         </div>
       </div>

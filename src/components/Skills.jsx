@@ -4,7 +4,6 @@ import CSS from "../assets/css.png";
 import JavaScript from "../assets/javascript.png";
 import ReactImg from "../assets/react.png";
 import Node from "../assets/node.png";
-import FireBase from "../assets/firebase.png";
 import Post from "../assets/Post.png";
 import GitHub from "../assets/github.png";
 import Tailwind from "../assets/tailwind.png";
@@ -15,7 +14,7 @@ const Skills = () => {
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
-          <p className="text-6xl font-bold inline border-b-4 border-pink-600 ">
+          <p className="text-7xl font-bold inline border-b-4 border-pink-600 ">
             Skills
           </p>
           <p className="py-4">These are the technogies I've worked with.</p>

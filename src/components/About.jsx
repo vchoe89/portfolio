@@ -6,8 +6,8 @@ const About = () => {
     <div name="about" className="w-full h-screen bg-white text-gray-800">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
-          <div className="sm:text-right pb-8 pl-4 mt-[310px]">
-            <p className="text-6xl bottom-10 left-10 font-bold inline border-b-4 border-pink-600 ">
+          <div className="sm:text-right pb-8 pl-4 mt-[350px]">
+            <p className="text-7xl bottom-10 left-10 font-bold inline border-b-4 border-pink-600 ">
               About
             </p>
           </div>

@@ -54,10 +54,10 @@ const Navbar = () => {
 
       {/*menu */}
       <div>
-        <ul className="nav-bar group hidden md:flex">
+        <ul className="nav-bar px-4 group hidden md:flex">
           <li>
             <Link
-              className="nav-div nav-div-black"
+              className="nav-div drop-shadow-sm nav-div-black hover:font-bold"
               to="home"
               smooth={true}
               duration={600}
@@ -67,7 +67,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="nav-div nav-div-black"
+              className="nav-div nav-div-black hover:font-bold"
               to="about"
               smooth={true}
               duration={600}
@@ -77,7 +77,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="nav-div nav-div-black"
+              className="nav-div nav-div-black hover:font-bold"
               to="skills"
               smooth={true}
               duration={600}
@@ -87,7 +87,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="nav-div nav-div-black"
+              className="nav-div nav-div-black hover:font-bold"
               to="work"
               smooth={true}
               duration={600}
@@ -97,7 +97,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className="nav-div nav-div-black"
+              className="nav-div nav-div-black hover:font-bold"
               to="contact"
               smooth={true}
               duration={600}
