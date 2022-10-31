@@ -1,32 +1,14 @@
-import React, { useState } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaGithub,
-  FaLinkedin,
-  FaFacebook,
-} from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Logo2 from "../assets/vclogo.png";
+import Logo2 from "../assets/vclogo2.png";
 import { Link } from "react-scroll";
-import Logo3 from "../assets/trylogo.png";
+import Aos from "aos";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  // var lastScrollTop;
-  // let navbar = document.getElementById("navbar");
-  // window.addEventListener("scroll", function () {
-  //   var scrollTop =
-  //     window.pageYOffset || this.document.documentElement.scrollTop;
-  //   if (scrollTop > lastScrollTop) {
-  //     navbar.style.top = "-80px";
-  //   } else {
-  //     navbar.style.top = "0";
-  //   }
-  //   lastScrollTop = scrollTop;
-  // });
 
   var prevScrollpos = window.pageYOffset;
   window.onscroll = function () {
@@ -39,27 +21,33 @@ const Navbar = () => {
     prevScrollpos = currentScrollPos;
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 1000, disable: "mobile" });
+  }, []);
+
   return (
     <div
       id="navbar"
-      className="fixed w-full text-lg h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 "
+      className="fixed w-screen text-lg h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 "
     >
       <div>
-        <img
-          className="pr-[8rem]  pt-2 left"
-          id="nav-img"
-          src={Logo2}
-          alt="Logo image"
-          style={{ width: "200px" }}
-        />
+        <Link to="home" smooth={true} duration={600}>
+          <img
+            className="mx-4 my-2 hidden md:block left cursor-pointer"
+            id="nav-img"
+            src={Logo2}
+            alt="Logo"
+            style={{ width: "50px" }}
+          />
+        </Link>
       </div>
 
       {/*menu */}
       <div>
         <ul className="nav-bar px-4 group hidden md:flex">
-          <li>
+          <li data-aos="zoom-in-down" data-aos-delay="1000">
             <Link
-              className="nav-div drop-shadow-sm nav-div-black hover:font-bold"
+              className="nav-div drop-shadow-sm nav-div-black"
               to="home"
               smooth={true}
               duration={600}
@@ -67,9 +55,9 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li>
+          <li data-aos="zoom-in-down" data-aos-delay="800">
             <Link
-              className="nav-div nav-div-black hover:font-bold"
+              className="nav-div nav-div-black"
               to="about"
               smooth={true}
               duration={600}
@@ -77,9 +65,9 @@ const Navbar = () => {
               About
             </Link>
           </li>
-          <li>
+          <li data-aos="zoom-in-down" data-aos-delay="600">
             <Link
-              className="nav-div nav-div-black hover:font-bold"
+              className="nav-div nav-div-black "
               to="skills"
               smooth={true}
               duration={600}
@@ -87,9 +75,9 @@ const Navbar = () => {
               Skills
             </Link>
           </li>
-          <li>
+          <li data-aos="zoom-in-down" data-aos-delay="400">
             <Link
-              className="nav-div nav-div-black hover:font-bold"
+              className="nav-div nav-div-black "
               to="work"
               smooth={true}
               duration={600}
@@ -97,9 +85,9 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li>
+          <li data-aos="zoom-in-down" data-aos-delay="200">
             <Link
-              className="nav-div nav-div-black hover:font-bold"
+              className="nav-div nav-div-black"
               to="contact"
               smooth={true}
               duration={600}
@@ -111,7 +99,7 @@ const Navbar = () => {
       </div>
 
       {/*Hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleClick} className="md:hidden z-10 cursor-pointer">
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
@@ -171,7 +159,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="mailto: vchoe89@gmail.com"
             >
               Email <HiOutlineMail size={30} />
             </a>
@@ -179,7 +167,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="/"
+              href="https://docs.google.com/document/d/197AEtbxx3hBnRDFWWqtqtNbCG3p3DH3xtebs5Fos7_U/preview"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>

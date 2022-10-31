@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import Cartoon from "../assets/image2.png";
@@ -8,16 +8,17 @@ import styled, { keyframes } from "styled-components";
 const Home = () => {
   return (
     <div>
-      <div name="home" className="w-full h-screen bg-[#0a192f]">
-        <div>
-          <img
-            className="absolute  md:w-[690px] md:mx-[1000px] md:my-[220px]"
-            src={Cartoon}
-            alt=""
-          />
-        </div>
+      <div
+        name="home"
+        className="w-full relative justify-center h-screen bg-[#0a192f]"
+      >
+        <img
+          className="absolute w-[800px] h-[500px] hidden xl:block md:top-[200px] md:right-[50px]"
+          src={Cartoon}
+          alt="cartoon"
+        />
         {/* Container */}
-        <div className="max-w-[800px] mx-[100px]  px-8 flex flex-col justify-center h-full relative">
+        <div className="max-w-[800px] px-4 md:mx-[100px] flex flex-col justify-center h-full relative">
           <BouncyDiv>
             <p className="text-pink-600 text-xl">Hi, my name is</p>
           </BouncyDiv>
@@ -30,15 +31,15 @@ const Home = () => {
 
           <FlipDiv>
             <h2 className="text-4xl sm:text-7xl font-bold text-[#8892b0]">
-              I am a Full Stack Developer
+              I am a Full Stack Software Engineer
             </h2>
           </FlipDiv>
 
           <FlipDiv>
             <p className="text-[#8892b0] py-4 max-w-[700px]">
-              I’m a full-stack developer specializing in building and designing
-              an exceptional digital experience. Currently, I’m focused on
-              building responsive full-stack web applications.
+              I’m a full stack software engineer specializing in building and
+              designing an exceptional digital experience. Currently, I’m
+              focused on building responsive front-end web applications.
             </p>
           </FlipDiv>
           <FlipDiv>
@@ -72,3 +73,5 @@ const FlipDiv = styled.div`
 `;
 
 export default Home;
+
+// className="absolute hidden lg:block md:block sm:block w-[690px] my-[220px] mx-[900px]"
